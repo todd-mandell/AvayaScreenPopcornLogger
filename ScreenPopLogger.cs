@@ -3,7 +3,7 @@ using System.IO;
 
 
 
-namespace TMAvayaScreenPopcorn2
+namespace AvayaScreenPopcorn
 {
     class Program
     {
@@ -14,7 +14,7 @@ namespace TMAvayaScreenPopcorn2
             
 
 
-            string path = @"c:\users\tmandell\Documents\TMCallLogs.txt";
+            string path = @"c:\users\" + Environment.UserName + "\Documents\CallsLogged.txt";
             // This text is added only once to the file.
             if (!File.Exists(path))
             {
